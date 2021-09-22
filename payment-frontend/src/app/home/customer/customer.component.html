@@ -1,0 +1,23 @@
+<div class="container-fluid">
+<div class="row">
+  <div >
+<button type="button" (click)="onClick()" class="btn btn-primary">Customers</button>
+</div>
+<div>
+  <table border="1">
+    <tr>
+      <th>Customer Id</th>
+      <th>Customer Name</th>
+      <th>Clear balance</th>
+      <th>Over Draft</th>
+    </tr>
+    <tr *ngFor="let customer of customers ">
+       <td>{{customer.customerid}}</td>
+       <td>{{customer.accountholdername}}</td>
+       <td>{{customer.clearbalance}}</td>
+       <td>{{customer.overdraftflag}}</td>
+    </tr>
+  </table>
+</div>
+</div>
+</div>
